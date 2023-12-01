@@ -9,7 +9,4 @@ export default defineConfig({
       { find: /^utils\/(.*)/, replacement: './src/utils/$1.ts' },
     ],
   },
-  test: {
-    // 同步tsconfig.json的paths
-  },
 })
