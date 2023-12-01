@@ -23,7 +23,8 @@
     "paths": {
       "leetcode/*": ["src/leetcode/*"],
       "types/*": ["src/types/*"],
-      "utils/*": ["src/utils/*"]
+      "utils/*": ["src/utils/*"],
+      "utils": ["src/utils"]
     }
   },
   "include": ["src", "__test__"]

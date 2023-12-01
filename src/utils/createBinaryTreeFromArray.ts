@@ -5,14 +5,14 @@ export function createBinaryTreeFromArray(
 ): TreeNode | null {
   if (data.length === 0 || data[0] === null) return null
 
-  let root = new TreeNode(data[0])
-  let queue: TreeNode[] = [root]
+  const root = new TreeNode(data[0])
+  const queue: TreeNode[] = [root]
 
   for (let i = 1; i < data.length; i++) {
-    let currentNode = queue[0]
+    const currentNode = queue[0]
 
     if (data[i] !== null) {
-      let newNode = new TreeNode(data[i] as number)
+      const newNode = new TreeNode(data[i]!)
       if (i % 2 !== 0) {
         currentNode.left = newNode
       } else {
