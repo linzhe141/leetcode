@@ -1,3 +1,5 @@
+// 49. 字母异位词分组
+
 export function groupAnagrams(strs: string[]): string[][] {
   const map: Record<string, string[]> = {}
   for (const item of strs) {

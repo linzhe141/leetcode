@@ -1,3 +1,5 @@
+// 128. 最长连续序列
+
 export function longestConsecutive(nums: number[]): number {
   if (nums.length === 0) return 0
   const arr = Array.from(new Set(nums.sort((a, b) => a - b)))
