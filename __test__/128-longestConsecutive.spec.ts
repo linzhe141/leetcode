@@ -2,7 +2,7 @@ import { expect, test, describe } from 'vitest'
 
 import { longestConsecutive } from 'leetcode/128-longestConsecutive'
 
-describe('leetcode/49-groupAnagrams', () => {
+describe('leetcode/128-longestConsecutive', () => {
   test('case1', () => {
     expect(longestConsecutive([100, 4, 200, 1, 3, 2])).toBe(4)
   })

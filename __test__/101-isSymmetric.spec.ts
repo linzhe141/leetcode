@@ -2,7 +2,7 @@ import { expect, test, describe } from 'vitest'
 
 import { isSymmetric } from 'leetcode/101-isSymmetric'
 import { createBinaryTreeFromArray } from 'utils/createBinaryTreeFromArray'
-describe('leetcode/49-groupAnagrams', () => {
+describe('leetcode/101-isSymmetric', () => {
   test('case1', () => {
     const input = createBinaryTreeFromArray([1, 2, 2, null, 3, null, 3])
     expect(isSymmetric(input)).toBe(false)
