@@ -18,9 +18,9 @@ describe('leetcode/39-combinationSum', () => {
   })
   test('case4', () => {
     expect(combinationSum([8, 7, 4, 3], 11)).toEqual([
-      [3, 8],
-      [4, 7],
-      [3, 4, 4],
+      [8, 3],
+      [7, 4],
+      [4, 4, 3],
     ])
   })
 })
