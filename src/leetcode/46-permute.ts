@@ -1,4 +1,5 @@
 // 46. 全排列
+
 export function permute(nums: number[]): number[][] {
   const result: number[][] = []
   const selectArr = nums.map(() => false)
