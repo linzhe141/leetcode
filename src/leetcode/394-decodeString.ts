@@ -24,9 +24,7 @@ function stringToJson(s: string) {
   let repeat = 1
   let content = ''
   let nums: string[] = []
-  const map = {
-    '[': ']',
-  } as const
+  const map = { '[': ']' } as const
   const stack: '['[] = []
   for (let i = 0; i < s.length; i++) {
     const char = s[i]
