@@ -9,7 +9,6 @@ export function lengthOfLongestSubstring(s: string): number {
     if (!map[char]) {
       map[char] = 1
       max = Math.max(l - r + 1, max)
-      l++
     } else {
       map[char]++
       while (map[s[l]] > 1) {
