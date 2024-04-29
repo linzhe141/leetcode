@@ -26,5 +26,5 @@
       "utils/*": ["src/utils/*"]
     }
   },
-  "include": ["src", "__test__"]
+  "include": ["src", "test"]
 }
