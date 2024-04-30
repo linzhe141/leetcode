@@ -1,10 +1,13 @@
 // 322. 零钱兑换
 export function coinChange(coins: number[], amount: number): number {
-  // dp[i][j] 表示前i中硬币，在整数为j的金额，所需的最少硬币个数
+  // dp[i][j] 表示前i种硬币（物品），在整数为j的金额（背包），所需的最少硬币个数
   // dp[i][j] = min(dp[i-1][j],dp[i][j-coins[i-1]]+1)
-  // 矩阵 行是 背包
-  // 矩阵 列是 物品
+  
+  // 由dp[i][j]的i和j可知
+  // 矩阵 行是 背包 [j]
+  // 矩阵 列是 物品 [i]
   // 初始化和矩阵也是个难点
+
   // 0-1  背包，放入物品i是[i-1][j-weight[i]]+val[i]
   // 完全 背包，放入物品i是[i][j-weight[i]]+val[i]，因为硬币可以重复选，所有放入i之后，还是可以从前i中硬币选
   // const dp: number[][] = Array(coins.length + 1).fill(Array(amount + 1).fill(0))
